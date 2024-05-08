@@ -1,7 +1,7 @@
 import PIL.Image
 import PIL.ImageDraw
 import PIL.ImageFont
-
+import time
 
 def add_text(top_text, bottom_text, top_color, bottom_color, meme_file):
     # create drawing object
@@ -73,7 +73,8 @@ def main():
                 print("File opened successfully.")
                 break
         else:
-            print("All three file opening attempts failed.")
+            print("All three file opening attempts failed. Program will close in 5 seconds.")
+            time.sleep(5)
             exit()
 
         # get top and bottom text and color from user
