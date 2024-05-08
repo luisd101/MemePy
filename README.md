@@ -3,21 +3,21 @@ Python tool for creating memes without watermarks
 
 Table of Contents-
 
-Features
-Requirements
-Installation
+	Features
+	Requirements
+	Installation
 
 Features-
 
-Add top and bottom text to images
-Choose font colors for top and bottom text
-Font size auto adjusts based on image size and text length
-Saves meme without watermark
+	Add top and bottom text to images
+	Choose font colors for top and bottom text
+	Font size auto adjusts based on image size and text length
+	Saves meme without watermark
 
 Requirements-
 
-Python 3+
-Pillow library
+	Python 3+
+	Pillow library
 
 Installation-
 
