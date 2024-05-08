@@ -47,7 +47,7 @@ def add_text(top_text, bottom_text, top_color, bottom_color, meme_file):
     # write bottom text onto image
     # drawing_object.text((x_bot, y_bot), bottomText, font = impact, fill = (bottomTextR, bottomTextG, bottomTextB))
     drawing_object.text((x_bot, y_bot), bottom_text, font=impact_bot, fill=bottom_color)
-    # display the completed meme to the user
+    # report success to the user
     print("Memeification successful.")
 
 
@@ -94,6 +94,7 @@ def main():
             top_color = input("Enter color for top text: ").lower()
             bottom_color = input("Enter color for bottom text: ").lower()
 
+        # perform memefication and display meme
         add_text(top_text, bottom_text, top_color, bottom_color, meme_file)
         meme_file.show()
 
@@ -105,7 +106,8 @@ def main():
             meme_file.save(newfilename)
         try_again = input("Do you want to make another meme? (enter Y for yes or N for no)")
         if try_again.lower() == "n":
-            print("Thanks for using MemePy.")
+            print("Thanks for using MemePy. Program will exit in 5 seconds.")
+            time.sleep(5)
             exit()
 
 
